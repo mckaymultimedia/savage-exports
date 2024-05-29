@@ -1,0 +1,8 @@
+{
+    "config": {
+        "vendor-dir": "asw_vendor"
+    },
+    "require": {
+        "aws/aws-sdk-php": "~3.301.9"
+    }
+}

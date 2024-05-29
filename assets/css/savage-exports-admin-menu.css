@@ -1,0 +1,106 @@
+#savage-csv-files-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.csv-parent-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 16px;
+	background: #fff;
+	margin-bottom: 16px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+	border: none;
+	border-radius: 8px;
+}
+
+.savage-csv-files-load-more-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#savage-csv-files-load-more-button {
+	background: #fff;
+	border: none;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	padding: var(--e-button-padding-y) var(--e-button-padding-x);
+	text-decoration: none;
+	width: max( 15%, 102px );
+	border-radius: 8px;
+	cursor: pointer;
+	transition: color .1s ease-in;
+}
+
+#savage-csv-files-load-more-button:disabled,
+.csv-delete-btn:disabled,
+.savage-btn:disabled {
+	cursor: not-allowed;
+	color: rgba(16, 16, 16, 0.3);
+}
+
+.csv-file-name {
+	font-weight: bold;
+}
+
+.csv-delete-btn,
+.savage-btn {
+	padding: var(--e-button-padding-y) var(--e-button-padding-x);
+	background-color: var(--e-button-context-color);
+	color: #fff;
+	text-decoration: none;
+	border-radius: 8px;
+	position: relative;
+	cursor: pointer;
+	border: none;
+	margin-left: 8px;
+}
+
+.csv-delete-btn:not(:disabled):focus,
+.savage-btn:not(:disabled):focus {
+	outline: 0;
+	color: #fff;
+	box-shadow: 0 0 0 2px var(--e-focus-color);
+}
+
+.csv-delete-btn:not(:disabled):hover,
+.csv-delete-btn:not(:disabled):active,
+.savage-btn:not(:disabled):hover,
+.savage-btn:not(:disabled):active {
+	color: #fff;
+	background-color: var(--e-button-context-color-dark);
+}
+
+.csv-buttons-container {
+	display: flex;
+	align-items: center;
+}
+
+.csv-delete-btn {
+	width: auto;
+	height: auto;
+	font-size: 19px;
+}
+
+.savage-row {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+}
+
+.savage-container {
+	margin: 16px 8px 16px 0;
+	display: flex;
+	align-items: center;
+}
+
+.savage-label {
+	font-weight: 600;
+	margin-right: 8px;
+}
+
+#savage-msg-box {
+	text-align: center;
+	margin-bottom: 16px;
+}
